@@ -2,7 +2,7 @@
 
 <!-- Banner Image -->
 <p align="center">
-  <img src="https://via.placeholder.com/900x200.png?text=Zizu+Abzey+Portfolio+Banner" alt="Portfolio Banner" width="900" />
+  <img src="https://raw.githubusercontent.com/zizuabzey/my-portofolio/main/public/banner/banner.webp" alt="Portfolio Banner" width="900" />
 </p>
 
 A modern, responsive personal portfolio website showcasing the skills, experience, and projects of **Zizu Abzey**, a Fullstack Developer with a creative edge in design and digital content. This portfolio leverages **React**, **Three.js**, and **Tailwind CSS** to deliver an engaging 3D and animated user experience.
