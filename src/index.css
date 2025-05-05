@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: 'Poppins';
+  src: url('/path-to-font.woff2') format('woff2');
+  font-display: swap;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #000000; /* Fallback to black */
+}
+
+/* click button animation */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1; /* Teks terlihat penuh */
+  }
+  50% {
+    opacity: 0; /* Teks menghilang */
+  }
+}
+
+.animate-blink {
+  animation: blink 1.5s infinite; /* Durasi 1.5 detik, berjalan terus-menerus */
+}
+
+@keyframes dot-move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* Geser titik ke kanan */
+  }
+  100% {
+    transform: translateX(0); /* Kembali ke posisi awal */
+  }
+}
+
+.dot {
+  width: 10px;
+  height: 2.5px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 2px;
+  animation: dot-move 1.5s infinite ease-in-out; /* Animasi berjalan terus-menerus */
+}
+
+.animate-blink {
+  animation: blink 1.5s infinite; /* Durasi 1.5 detik, berjalan terus-menerus */
+}
+
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
+.star {
+  width: 30px;
+  height: 30px;
+  /* background: linear-gradient(45deg, #C40C0C, #ffffff); */
+  background-color: #e52020;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Efek cahaya */
+  animation: twinkle 2s infinite ease-in-out; /* Animasi berkelap-kelip */
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* gradient card animation */
+@keyframes gradient-rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.red-white-gradient {
+  background: linear-gradient(90deg, #c40c0c, #ffffff, #c40c0c);
+  background-size: 300% 300%;
+  animation: gradient-rotate 6s linear infinite; /* Animasi bergerak */
+  padding: 5px; /* Ketebalan gradasi */
+  border-radius: 20px;
+  transition: background 0.3s ease; /* Transisi halus untuk efek hover */
+}
+
+.red-white-gradient:hover {
+  background: linear-gradient(90deg, #c40c0c, #ffffff, #c40c0c); /* Ubah warna merah menjadi kuning */
+  padding: 7px;
+}
+
+.black-gradient {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.violet-gradient {
+  background: #804dee;
+  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+}
+
+.blue-gradient {
+  background: #00b7c2;
+  background: linear-gradient(-90deg, #00b7c2 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(-90deg, #00b7c2 0%, rgba(60, 51, 80, 0) 100%);
+}
+
+.red-gradient {
+  background: #e52020;
+  background: linear-gradient(-90deg, #e52020 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(-90deg, #e52020 0%, rgba(60, 51, 80, 0) 100%);
+}
+
+.green-pink-gradient {
+  background: '#00cea8';
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+/* .red-white-gradient {
+  background: "#C40C0C";
+  background: linear-gradient(90.13deg, #C40C0C 1.9%, #ffffff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #C40C0C 1.9%, #ffffff 97.5%);
+} */
+
+.orange-text-gradient {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f12711, #f5af19); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f12711, #f5af19); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #11998e, #38ef7d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #11998e, #38ef7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2f80ed, #56ccf2); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2f80ed, #56ccf2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.yellow-text-gradient {
+  background: #d8df02; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #d8df02, #c6a846); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #d8df02, #c6a846); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: #f658b7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f658b7, #f0bdbd); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f658b7, #f0bdbd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* vertical timeline animation */
+.vertical-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px; /* Lebar garis */
+  height: 100%; /* Tinggi garis */
+  background: linear-gradient(180deg, #c40c0c, #ffffff, #c40c0c, #ffffff);
+  background-size: 200% 200%;
+  animation: gradient-scroll 6s linear infinite;
+  border-radius: 50%; /* Membuat bentuk bulat */
+}
+
+@keyframes gradient-scroll {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+/* canvas- styles */
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #ffffff, 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.5), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7);
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.7), 1.8em -1.8em 0 0em #ffffff, 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5);
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.5), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7), 2.5em 0em 0 0em #ffffff, 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5), 2.5em 0em 0 0em rgba(255, 255, 255, 0.7), 1.75em 1.75em 0 0em #ffffff, 0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.5), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.7), 0em 2.5em 0 0em #ffffff,
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.5), 0em 2.5em 0 0em rgba(255, 255, 255, 0.7),
+      -1.8em 1.8em 0 0em #ffffff, -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.5),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.7), -2.6em 0em 0 0em #ffffff, -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5), -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
+  }
+}
+
+/* Gaya untuk navigasi Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #F5F5F5 !important; 
+  font-size: 0.5rem !important;
+}

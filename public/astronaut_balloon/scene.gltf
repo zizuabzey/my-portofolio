@@ -1,0 +1,357 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 49183,
+      "max": [
+        19.012248992919922,
+        24.662517547607422,
+        69.75202178955078
+      ],
+      "min": [
+        -19.012126922607422,
+        -13.235620498657227,
+        0.008178998716175556
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 590196,
+      "componentType": 5126,
+      "count": 49183,
+      "max": [
+        0.9999153017997742,
+        0.9999994039535522,
+        1.0
+      ],
+      "min": [
+        -0.9999054670333862,
+        -0.9999999403953552,
+        -0.9999781847000122
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 49183,
+      "max": [
+        0.99462890625,
+        0.9975796937942505
+      ],
+      "min": [
+        0.006023406982421875,
+        0.00537109375
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 148302,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1180392,
+      "componentType": 5126,
+      "count": 561,
+      "max": [
+        12.149547576904297,
+        13.792149543762207,
+        55.81417465209961
+      ],
+      "min": [
+        -12.149309158325195,
+        12.151754379272461,
+        35.56047058105469
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1187124,
+      "componentType": 5126,
+      "count": 561,
+      "max": [
+        0.4585969150066376,
+        -0.8694826364517212,
+        0.468174010515213
+      ],
+      "min": [
+        -0.4582725465297699,
+        -0.9999775290489197,
+        -0.4103472828865051
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 393464,
+      "componentType": 5126,
+      "count": 561,
+      "max": [
+        0.9853515625,
+        0.8992919921875
+      ],
+      "min": [
+        0.03179931640625,
+        0.09716796875
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 593208,
+      "componentType": 5125,
+      "count": 1692,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "ᄂΣVIП X GΛMIПG (https://sketchfab.com/levin.gaming)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/astronaut-balloon-by-levin-x-gaming-21602b657d484858a0cfbd913c637362",
+      "title": "Astronaut Balloon By Levin X Gaming"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 599976,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 397952,
+      "byteOffset": 599976,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1193856,
+      "byteOffset": 997928,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 2191784,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/mat0.001_baseColor.png"
+    },
+    {
+      "uri": "textures/mat0_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "mat0.001",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8308205978495098
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "mat0",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8308205978495098
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh_0397.rip_mat0.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh_0398.rip_mat0_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Astronaut Balloon.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.6292067939183141e-07,
+        -0.9999999999999868,
+        0.0,
+        0.0,
+        0.9999999999999868,
+        -1.6292067939183141e-07,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Mesh_0397.rip"
+    },
+    {
+      "mesh": 0,
+      "name": "Mesh_0397.rip_mat0.001_0"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2.2204460466033348e-14,
+        0.0,
+        0.0,
+        -2.2204460466033348e-14,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Mesh_0398.rip"
+    },
+    {
+      "mesh": 1,
+      "name": "Mesh_0398.rip_mat0_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}
