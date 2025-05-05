@@ -9,6 +9,21 @@ A modern, responsive personal portfolio website showcasing the skills, experienc
 
 ---
 
+## Live Demo 🚀
+
+Check out the live demo of the portfolio website here:  
+[https://zizuabzey.vercel.app/](https://zizuabzey.vercel.app/)
+
+---
+
+## Support ☕
+
+If you find this project helpful or inspiring, you can support me with a tip via Ko-fi or Saweria:  
+- Ko-fi: [https://ko-fi.com/zizuabzey](https://ko-fi.com/zizuabzey)  
+- Saweria: [https://saweria.co/zizuabzey](https://saweria.co/zizuabzey)
+
+---
+
 ## Features ✨
 
 - Interactive 3D elements and animations using **Three.js** and **React Three Fiber**
@@ -86,7 +101,7 @@ Connect with Zizu Abzey on social media:
 
 ## License
 
-This project is private and not licensed for public use, inpired by jsm.
+This project is proprietary and intended for personal use only. Inspired by jsm.
 
 ---
 
