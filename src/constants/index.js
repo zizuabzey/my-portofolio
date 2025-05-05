@@ -116,119 +116,6 @@ export const otherTechnologies = [
   // { name: "Premiere Pro", icon: premiere },
 ];
 
-export const technologies = [
-  {
-    name: 'HTML 5',
-    icon: html,
-    category: 'Programming',
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
-    category: 'Programming',
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
-    category: 'Programming',
-  },
-  {
-    name: 'React JS',
-    icon: reactjs,
-    category: 'Programming',
-  },
-  // {
-  //   name: "Next JS",
-  //   icon: nextjs,
-  //   category: "Programming",
-  // },
-  {
-    name: 'Three JS',
-    icon: threejs,
-    category: 'Programming',
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-    category: 'Programming',
-  },
-  // {
-  //   name: "Bootstrap",
-  //   icon: bootstrap,
-  //   category: "Programming",
-  // },
-  {
-    name: 'Node JS',
-    icon: nodejs,
-    category: 'Programming',
-  },
-  {
-    name: 'MongoDB',
-    icon: mongodb,
-    category: 'Programming',
-  },
-  // {
-  //   name: "Python",
-  //   icon: python,
-  //   category: "Programming",
-  // },
-  // {
-  //   name: "Laravel",
-  //   icon: laravel,
-  //   category: "Programming",
-  // },
-  // {
-  //   name: "PHP",
-  //   icon: php,
-  //   category: "Programming",
-  // },
-  // {
-  //   name: "MySQL",
-  //   icon: mysql,
-  //   category: "Programming",
-  // },
-  {
-    name: 'WordPress',
-    icon: wordpress,
-    category: 'Programming',
-  },
-  {
-    name: 'GitHub',
-    icon: github,
-    category: 'Programming',
-  },
-  {
-    name: 'figma',
-    icon: figma,
-    category: 'Design Graphic',
-  },
-  {
-    name: 'Canva',
-    icon: canva,
-    category: 'Design Graphic',
-  },
-  // {
-  //   name: 'Photoshop',
-  //   icon: photoshop,
-  //   category: 'Design Graphic',
-  // },
-  // {
-  //   name: 'Illustrator',
-  //   icon: illustrator,
-  //   category: 'Design Graphic',
-  // },
-  // {
-  //   name: 'Office',
-  //   icon: office,
-  //   category: 'Other',
-  // },
-  // {
-  //   name: 'Premiere Pro',
-  //   icon: premiere,
-  //   category: 'Other',
-  // },
-];
-
 export const experiences = [
   {
     title: 'Web Developer & IT Staff',
@@ -374,7 +261,7 @@ export const intermediateProject = [
       },
     ],
     image: companyProfile,
-    source_code_link: 'https://github.com/zizua',
+    source_code_link: 'https://github.com/zizuabzey',
   },
   {
     name: 'BMI Calculator',
@@ -395,7 +282,7 @@ export const intermediateProject = [
       },
     ],
     image: bmiCalculator,
-    source_code_link: 'https://zizua.github.io/calculator-bmi/',
+    source_code_link: 'https://zizuabzey.github.io/calculator-bmi/',
   },
   {
     name: 'Portofolio - Recent Version',
@@ -415,7 +302,7 @@ export const intermediateProject = [
       },
     ],
     image: portoIntermediate,
-    source_code_link: 'https://github.com/zizua',
+    source_code_link: 'https://github.com/zizuabzey',
   },
 ];
 
@@ -442,7 +329,7 @@ export const advancedProject = [
       },
     ],
     image: todolist,
-    source_code_link: 'https://github.com/zizua',
+    source_code_link: 'https://github.com/zizuabzey',
   },
   {
     name: 'E-commerce Clothing',
@@ -466,7 +353,7 @@ export const advancedProject = [
       },
     ],
     image: ecommerce,
-    source_code_link: 'https://github.com/zizua/e-commerce',
+    source_code_link: 'https://github.com/zizuabzey/e-commerce',
   },
 ];
 
@@ -489,7 +376,7 @@ export const academicProject = [
       },
     ],
     image: portalAlumni,
-    source_code_link: 'https://github.com/zizua',
+    source_code_link: 'https://github.com/zizuabzey',
   },
   {
     name: 'Chatbot',
@@ -501,7 +388,7 @@ export const academicProject = [
       },
     ],
     image: chatBot,
-    source_code_link: 'https://github.com/zizua',
+    source_code_link: 'https://github.com/zizuabzey',
   },
   {
     name: 'GIS',
@@ -517,7 +404,7 @@ export const academicProject = [
       },
     ],
     image: gis,
-    source_code_link: 'https://github.com/zizua',
+    source_code_link: 'https://github.com/zizuabzey',
   },
 ];
 
@@ -525,7 +412,7 @@ export const socials = [
   {
     name: 'GitHub',
     icon: iconGithub,
-    url: 'https://github.com/zizua',
+    url: 'https://github.com/zizuabzey',
   },
   {
     name: 'LinkedIn',
@@ -550,7 +437,7 @@ export const socials = [
   {
     name: 'Meta',
     icon: iconMeta,
-    url: 'https://web.facebook.com/zizuabdulaziz/',
+    url: 'https://web.facebook.com/zizuabzey/',
   },
   {
     name: 'YouTube',

@@ -29,6 +29,7 @@ const Footer = () => {
     });
   };
 
+
   return (
     <>
       {/* Tombol Scroll to Top */}
@@ -44,7 +45,7 @@ const Footer = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           {/* Paragraf Footer */}
           <p className="text-[12px] text-center md:text-left">
-            © {new Date().getFullYear()} <span className="font-bold">Zizu Abzey ☕</span> All rights reserved
+            © {new Date().getFullYear()} <span className="font-bold">Zizu Abzey 🚀</span> All rights reserved
           </p>
 
           {/* Garis Pembatas */}

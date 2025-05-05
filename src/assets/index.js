@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import iconFullstack from "./iconFullstack.png";
 import iconWebdev from "./iconWebdev.png"; 
 import iconGraphic from "./iconGraphic.png";
@@ -40,15 +39,15 @@ import logoNaraharsa from "./company/logoNaraharsa.png";
 import logoMiv from "./company/logoMiv.png";
 import logoTutor from "./company/logoTutor.png";
 
-import portoMini from "./portoMini.png";
-import companyProfile from "./companyProfile.png";
-import bmiCalculator from "./bmiCalculator.png";
-import portoIntermediate from "./portoIntermediate.png"
-import todolist from "./todolist.png";
-import ecommerce from "./ecommerce.png";
-import portalAlumni from "./portalAlumni.png";
-import chatBot from "./chatBot.png";
-import gis from "./gis.png";
+import portoMini from "./portoMini.webp";
+import companyProfile from "./companyProfile.webp";
+import bmiCalculator from "./bmiCalculator.webp";
+import portoIntermediate from "./portoIntermediate.webp"
+import todolist from "./todolist.webp";
+import ecommerce from "./ecommerce.webp";
+import portalAlumni from "./portalAlumni.webp";
+import chatBot from "./chatBot.webp";
+import gis from "./gis.webp";
 
 
 import iconGithub from "./social/iconGithub.png";
@@ -60,7 +59,6 @@ import iconMeta from "./social/iconMeta.png"
 import iconYoutube from "./social/iconYoutube.png"
 
 export {
-  logo,
   iconFullstack,
   iconWebdev,
   iconGraphic,

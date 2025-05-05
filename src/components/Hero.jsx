@@ -1,7 +1,7 @@
 import React, { Suspense, lazy, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import placeholderImage from '../assets/herobg.png';
+import placeholderImage from '../assets/herobg.webp';
 
 const Astronaut1Canvas = lazy(() => import('./canvas/Astronaut1'));
 
