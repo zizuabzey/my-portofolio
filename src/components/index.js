@@ -9,6 +9,7 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Footer from './Footer';
+import VercelAnalytics from './Analytics';
 
 export {
   Hero,
@@ -21,6 +22,7 @@ export {
   Feedbacks,
   Contact,
   Footer,
+  VercelAnalytics,
   AsteroidCanvas, 
   Astronaut1Canvas,
   Astronaut2Canvas,
