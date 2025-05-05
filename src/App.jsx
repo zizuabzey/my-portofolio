@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { About, Contact, Experience, FreelanceExperience, Feedbacks, Hero, Navbar, Technology, Works, StarsCanvas, Footer } from './components';
 import VercelAnalytics from './components/Analytics';
+import VercelSpeedInsights from './components/SpeedInsights';
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -49,6 +50,7 @@ const App = () => {
               <Contact />
               <Footer />
               <VercelAnalytics />
+              <VercelSpeedInsights />
             </div>
           </div>
         </ErrorBoundary>

@@ -10,6 +10,7 @@ import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Footer from './Footer';
 import VercelAnalytics from './Analytics';
+import VercelSpeedInsights from './SpeedInsights';
 
 export {
   Hero,
@@ -23,6 +24,7 @@ export {
   Contact,
   Footer,
   VercelAnalytics,
+  VercelSpeedInsights,
   AsteroidCanvas, 
   Astronaut1Canvas,
   Astronaut2Canvas,
