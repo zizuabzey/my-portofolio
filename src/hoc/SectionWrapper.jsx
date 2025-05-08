@@ -6,10 +6,10 @@ import { staggerContainer } from '../utils/motion';
 const StarWrapper = (Component, idName) =>
   function HOC() {
     return (
-      <motion.section variants={staggerContainer()} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }} className={`${styles.padding} max-w-7xl mx-auto relative z-0 min-h-screen`}>
-        <span className="hash-span" id={idName}>
+      <motion.section id={idName} variants={staggerContainer()} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }} className={`${styles.padding} max-w-7xl mx-auto relative z-0 min-h-screen`}>
+        {/* <span className="hash-span" id={idName}>
           &nbsp;
-        </span>
+        </span> */}
 
         <Component />
       </motion.section>

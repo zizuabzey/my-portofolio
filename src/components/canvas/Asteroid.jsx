@@ -1,4 +1,4 @@
-import React, { Suspense, useRef } from 'react';
+import React, { Suspense, useRef, useEffect, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei';
 import * as THREE from 'three';
@@ -36,9 +36,9 @@ const IrregularAsteroid = (props) => {
     <Float speed={1.75} rotationIntensity={0} floatIntensity={2}>
       {' '}
       {/* Efek melayang */}
-      <ambientLight intensity={0.25} />
-      <directionalLight position={[0, 0, 0.5]} />
-      <mesh ref={meshRef} castShadow receiveShadow scale={3} geometry={geometry}>
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[0, 0, 1]} />
+      <mesh ref={meshRef} castShadow receiveShadow scale={props.isMobile ? 2.5 : 3} geometry={geometry}>
         {' '}
         {/* Bentuk asteroid tidak teratur */}
         <meshStandardMaterial
@@ -62,11 +62,29 @@ const IrregularAsteroid = (props) => {
 };
 
 const IrregularAsteroidCanvas = ({ icon }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const mediaQuery = window.matchMedia('(max-width: 500px)');
+
+      setIsMobile(mediaQuery.matches);
+
+      const handleMediaQueryChange = (event) => {
+        setIsMobile(event.matches);
+      };
+
+      mediaQuery.addEventListener('change', handleMediaQueryChange);
+
+      return () => mediaQuery.removeEventListener('change', handleMediaQueryChange);
+    }
+  }, []);
+
   return (
     <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
-        <IrregularAsteroid imgUrl={icon} />
+        <IrregularAsteroid imgUrl={icon} isMobile={isMobile} />
       </Suspense>
 
       <Preload all />

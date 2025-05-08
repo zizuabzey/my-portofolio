@@ -1,9 +1,32 @@
-import React, { Suspense, lazy, useState, useEffect } from 'react';
+import React, { Suspense, lazy, useState, useEffect, Component } from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import placeholderImage from '../assets/herobg.webp';
 
 const Astronaut1Canvas = lazy(() => import('./canvas/Astronaut1'));
+
+class CanvasErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    console.error('CanvasErrorBoundary caught an error', error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return <div className="text-red-500">Failed to load 3D canvas.</div>;
+    }
+
+    return this.props.children;
+  }
+}
 
 const Hero = () => {
   const text = 'A Fullstack Developer \nwith a Creative Edge in Design & Digital Content';
@@ -88,9 +111,11 @@ const Hero = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
       )}
-      <Suspense fallback={<div>Loading 3D Canvas...</div>}>
-        <Astronaut1Canvas onLoad={() => setCanvasLoaded(true)} />
-      </Suspense>
+      <CanvasErrorBoundary>
+        <Suspense fallback={<div>Loading 3D Canvas...</div>}>
+          <Astronaut1Canvas onLoad={() => setCanvasLoaded(true)} />
+        </Suspense>
+      </CanvasErrorBoundary>
       <div className="absolute xs:bottom-20 bottom-32 w-full flex flex-col justify-center items-center">
         {/* Planet & Link */}
         <a href="#about" className="flex flex-col items-center">
